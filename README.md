@@ -17,8 +17,7 @@
 			NOTA INT NOT NULL DEFAULT 1, 
 			Poster VARCHAR (MAX),
 			STATUS_ASSISTIDO BIT NOT NULL DEFAULT 0,
-			DATA_CADASTRO DATETIME NOT NULL DEFAULT GETDATE(),
-
+			DATA_CADASTRO DATETIME NOT NULL DEFAULT GETDATE()
    		)	 
 
 3) Executar o comando "update-database" no Package Manager Console, apontando para o projeto "MyFlix.DAO" (isso ira incluir as tabelas Identity usadas pra autenticação do usuário)
