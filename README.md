@@ -6,6 +6,7 @@
 	GO
 	
 	USE MyFlixDB
+    GO
 	
 	CREATE TABLE Filme
 		(
