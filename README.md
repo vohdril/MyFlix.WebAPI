@@ -6,8 +6,7 @@
 	GO
 	
 	USE MyFlixDB
-	GO
-,,,sql	
+```sql	
 	CREATE TABLE Filme
 		(
 			Id INT  IDENTITY(1,1) PRIMARY KEY,
@@ -20,5 +19,7 @@
 			DATA_CADASTRO DATETIME NOT NULL DEFAULT GETDATE()
    		)
 
-   ,,,
+```
 3) Executar o comando "update-database" no Package Manager Console, apontando para o projeto "MyFlix.DAO" (isso ira incluir as tabelas Identity usadas pra autenticação do usuário)
+
+4) Verique se a string de conexão do servidor local SQL está configurada corretamente. As configurações de ambiente de string de conexão ficam no arquivo appSettings (Projeto 'MyFlix.API') 
