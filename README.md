@@ -1,12 +1,12 @@
  - Antes de executar a API, é necessário:
 1) Criar a base de dados conforme o script SQL abaixo:
 
-	
+```sql	
 	CREATE DATABASE MyFlixDB
 	GO
 	
 	USE MyFlixDB
-```sql	
+	
 	CREATE TABLE Filme
 		(
 			Id INT  IDENTITY(1,1) PRIMARY KEY,
